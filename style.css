@@ -12,6 +12,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #ffee93;
 }
 
 .container {
@@ -29,8 +30,10 @@ body {
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
+  opacity: 1;
+  filter: brightness(200%);
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: all 0.7s ease-in;
 }
 
 .panel h3 {
@@ -44,6 +47,9 @@ body {
 
 .panel.active {
   flex: 5;
+  opacity: 1;
+  filter: brightness(100%);
+  border-radius: 30px;
 }
 
 .panel.active h3 {
